@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/systemjs/0.20.17/system.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+	<input id="clickme" type="button" value="点击我" />
+</body>
+
+</html>
+<script>
+	SystemJS.import('praiseClass_sub.js').then(function () {
+
+	});
+
+	$("#clickme").click(function () {
+		axios.get('/update')
+		.then(function (response) {
+			console.log(response);
+		})
+		.catch(function (error) {
+			console.log(error);
+		});
+	})
+
+</script>
