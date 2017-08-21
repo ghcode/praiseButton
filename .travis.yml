@@ -1,7 +1,9 @@
-language:node_js
-node_js:
-  -"7"
-before_script:
-  -npm run browser
-  -npm run sever
-script:node app.js
+language: node_js
+node_js: 
+  - "7" 
+
+before_script: 
+  - npm run browser 
+  - npm run sever 
+  
+script: npm run test 
