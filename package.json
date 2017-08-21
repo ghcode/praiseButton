@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browser":"babel public/*es -d ./  --presets=es2015,stage-0",
-    "sever":"babel  app.es -o app.js  --presets=es2015,stage-0  --plugins=transform-runtime"
+    "browser": "babel public/*es -d ./  --presets=es2015,stage-0",
+    "sever": "babel  app.es -o app.js  --presets=es2015,stage-0  --plugins=transform-runtime"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel": "^6.23.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
