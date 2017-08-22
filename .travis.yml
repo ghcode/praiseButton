@@ -9,5 +9,6 @@ before_install:
 before_script: 
   - npm run browser 
   - npm run sever 
+  - pwd
   
 script: npm run test 
