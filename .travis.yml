@@ -13,6 +13,5 @@ before_install:
 before_script:
 - npm run browser
 - npm run sever
-script: node app.js
-after_script:
-- scp -o StrictHostKeyChecking=no ../praise root@iZ2ze8ofvx4u0vx4fi5zfbZ:/root/www/
+- scp -o StrictHostKeyChecking=no ../praiseButton root@iZ2ze8ofvx4u0vx4fi5zfbZ:/root/www/
+script: npm run test 
