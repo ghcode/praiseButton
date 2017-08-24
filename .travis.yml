@@ -9,6 +9,8 @@ before_install:
 - eval $(ssh-agent)
 - ssh-add ~/.ssh/id_rsa
 - cp .travis/ssh_config ~/.ssh/config
+- who
+- cat ~/.ssh/id_rsa.pub
 - npm install -g babel-cli
 before_script:
 - npm run browser
