@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node ./test/test.js",
     "browser": "babel public/*es -d ./  --presets=es2015,stage-0",
-    "sever": "babel  app.es -o app.js  --presets=es2015,stage-0  --plugins=transform-runtime"
+    "sever": "babel  app.es -o ./test/app.js  --presets=es2015,stage-0  --plugins=transform-runtime"
   },
   "author": "",
   "license": "ISC",
