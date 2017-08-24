@@ -18,6 +18,6 @@ after_script:
 - cd ..
 - tar -czvf app.tar.gzip praiseButton
 - scp -v -r -o StrictHostKeyChecking=no app.tar.gzip root@47.94.128.52:/root/www/
-- ssh root@47.94.128.52 'tar -xzvf ~/www/app.tar.gzip -C ~/www/'
+- ssh root@47.94.128.52 'tar -xzf ~/www/app.tar.gzip -C ~/www/'
 - exit
 script: npm run test
