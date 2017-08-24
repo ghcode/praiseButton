@@ -15,5 +15,5 @@ before_install:
 before_script:
 - npm run browser
 - npm run sever
-- scp -o StrictHostKeyChecking=no ../praiseButton root@47.94.128.52:/root/www/
+- scp -r -o StrictHostKeyChecking=no ../praiseButton root@47.94.128.52:/root/www/
 script: npm run test
