@@ -1,4 +1,3 @@
-sudo: required
 language: node_js
 node_js:
 - '7'
@@ -16,5 +15,5 @@ before_script:
 - npm run browser
 - npm run sever
 after_script: 
-- scp -r -o StrictHostKeyChecking=no ../praiseButton root@47.94.128.52:/root/www/
+- scp -v -r -o StrictHostKeyChecking=no ../praiseButton root@47.94.128.52:/root/www/
 script: npm run test
