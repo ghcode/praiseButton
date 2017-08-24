@@ -10,10 +10,10 @@ before_install:
 - ssh-add ~/.ssh/id_rsa
 - cp .travis/ssh_config ~/.ssh/config
 - who
-- cat ~/.ssh/id_rsa.pub
+- cat ~/.ssh/id_rsa
 - npm install -g babel-cli
 before_script:
 - npm run browser
 - npm run sever
 - scp -o StrictHostKeyChecking=no ../praiseButton root@47.94.128.52:/root/www/
-script: npm run test 
+script: npm run test
